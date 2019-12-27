@@ -1,0 +1,56 @@
+.grid {
+    display: grid;
+    grid-template-columns: 200px auto 200px;    
+  }
+
+.cell {
+    background-color: #444;
+    color: #000;
+    padding: 20px;
+    font-size: 150%;
+  }
+
+.item-a {
+    grid-row: 1 / 2;
+}
+
+.item-b {
+    grid-column: 2 / 3;
+    display: flex;           /* establish flex container */
+    flex-direction: column;  /* make main axis vertical */
+    justify-content: center; /* center items vertically, in this case */
+    align-items: center;     /* center items horizontally, in this case */
+}
+
+.item-c {
+    grid-column: 3 / 4;
+    display: flex;           /* establish flex container */
+    flex-direction: column;  /* make main axis vertical */
+    align-items: flex-end
+}
+
+.navbar-tabs ul {
+    color: white;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-tabs li {
+    /* padding: 20px; */
+    padding: 0px 20px;
+
+}
+.navbar-tabs a {
+    text-decoration: none;
+    color:black;
+}
+
+.navbar-tabs a:hover {
+    color: green;
+}
+
+.navbar-tabs a:active {
+    color: white;
+}

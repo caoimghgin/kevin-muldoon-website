@@ -1,0 +1,177 @@
+/* .navbar2 {
+    position: fixed;
+    width:100%;
+    background: #007bff;
+    height: 100px;
+    top:0px;
+    left:0px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+    transition: height 0.5s ease;
+}
+
+.navbar2_container {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar2_logo {
+   margin-left: 1.0rem;
+}
+
+.navbar2_logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.navbar2_tabs {
+    display:flex;
+}
+
+.navbar2_tabs a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.0rem;
+}
+
+.navbar2_tabs ul {
+    color: white;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar2_tabs li {
+    padding: 20px;
+    padding: 0px 20px;
+}
+
+.navbar2_tabs a:hover {
+    color: green;
+}
+
+.navbar2_tabs a:active {
+    color: white;
+}
+
+.spacer {
+    flex: 1;
+}
+
+.navbar2.compressed {
+    position: fixed;
+    width:100%;
+    background: #007bff;
+    height: 50px;
+    top:0px;
+    left:0px;
+    transition: background-color 0.5s ease;
+    transition: height 0.2s ease;
+    background-color: gray;
+}
+
+@media (max-width: 768px) {
+    .navbar2_tabs {
+        display: none;
+    }
+} */
+
+
+.grid {
+    display: grid;
+    grid-template-columns: 200px auto 200px;
+    position: fixed;
+    width:100%;
+    background: #007bff;
+    height: 100px;
+    top:0px;
+    left:0px;
+    transition: height 0.35s ease;
+    padding: 0px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+
+  }
+
+  .grid.compressed {
+    /* position: fixed; */
+    /* width:100%; */
+    /* background: #007bff;
+    height: 20px;
+    top:0px;
+    left:0px;
+    transition: background-color 0.5s ease;
+    transition: height 0.35s ease;
+    background-color: gray; */
+
+    /* display: grid;
+    grid-template-columns: 200px auto 200px;
+    position: fixed;
+    width:100%; */
+    /* background: #007bff; */
+    height: 44px;
+    /* box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2); */
+
+    /* top:0px;
+    left:0px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+    transition: height 0.35s ease;  
+    padding: 0px; */
+}
+
+.cell {
+    background-color: blue;
+    /* color: #000; */
+    /* border-radius: 5px; */
+    padding: 0px;
+    color: white;
+    font-size: 150%;
+  }
+
+.item-left {
+    grid-row: 1 / 2;
+    background: green;
+    display: flex;           /* establish flex container */
+    flex-direction: column;  /* make main axis vertical */
+    justify-content: center; /* center items vertically, in this case */
+    padding: 0px 100px;
+    color: white;
+}
+
+.item-center {
+    grid-column: 2 / 3;
+    display: flex;           /* establish flex container */
+    flex-direction: column;  /* make main axis vertical */
+    justify-content: center; /* center items vertically, in this case */
+    align-items: center;     /* center items horizontally, in this case */
+    padding: 0px;
+
+}
+
+.item-right {
+    grid-column: 3 / 4;
+    display: flex;           /* establish flex container */
+    flex-direction: column;  /* make main axis vertical */
+    justify-content: center; /* center items vertically, in this case */
+    align-items: flex-end;
+    background: purple;
+    padding: 0px;
+}
+
+.cell.item-left {
+    padding: 0;
+}
+
+.cell.item-center {
+    padding: 0;
+}
+
+.cell.item-right {
+    padding: 0;
+}

@@ -1,0 +1,20 @@
+.sidemenu_toggle_button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height:24px;
+    width:36px;
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+
+.sidemenu_toggle_button:focus {
+  outline:none;
+}
+
+.sidemenu_toggle_button_line {
+    width: 30px;
+    height: 2px;
+    background: black;
+}
